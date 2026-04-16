@@ -4,25 +4,29 @@ import os
 
 # Задание. найти файл config.txt . 
 
-if os.path.exists("config.txt"):
-    print('файл найден')
-else:
-     with open("config.txt", "w", encoding="utf-8") as file:
-         print('файл создан')  # можно удалить принт и вместо него написать pass . Всё будет работать
+# if os.path.exists("config.txt"):
+#     print('файл найден')
+# else:
+#      with open("config.txt", "w", encoding="utf-8") as file:
+#          print('файл создан')  # можно удалить принт и вместо него написать pass . Всё будет работать
 
 
     
 
 
-with open("config.txt", "a", encoding="utf-8") as file:
-    pass
+# with open("config.txt", "a", encoding="utf-8") as file:
+#     pass
+
+
+append_film('titanic',9.9)
+
 
 
 
 #Программа запрашивает у пользователя имя папки и имя файла . Создаёт папку (если её нет )
 
-name_dir = input('введите имя папки: ')
-name_file = input('введите имя файла: ')
+# name_dir = input('введите имя папки: ')
+# name_file = input('введите имя файла: ')
 # if os.path.exists(name_dir): 
 #     with open(name_file, "a", encoding="utf-8") as file:
 #         pass
@@ -43,21 +47,21 @@ name_file = input('введите имя файла: ')
 #         pass
 
 
-if name_dir not in os.listdir('.'):
-    os.mkdir(name_dir)
+# if name_dir not in os.listdir('.'):
+#     os.mkdir(name_dir)
 
-with open(name_dir + '/' + name_file, 'a', encoding='utf-8') as file:
-    pass
-
-    
-    
+# with open(name_dir + '/' + name_file, 'a', encoding='utf-8') as file:
+#     pass
 
     
+    
+
+    
 
 
 
 
-#wtite_user_message('привет') 
+# wtite_user_message('привет') 
 
 
 # append_new_user()
@@ -111,5 +115,4 @@ with open(name_dir + '/' + name_file, 'a', encoding='utf-8') as file:
         
 #     print(len(lines))    
     
-        
         
